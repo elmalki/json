@@ -1,0 +1,35 @@
+<link href="<?php echo $this->baseUrl() . '/css/bootstrap.css'; ?>" media="all" rel="stylesheet" type="text/css" />
+
+<i>Scripts:Views:_form_register</i>
+<form id="login" class="well" action="<?= $this->element->getAction(); ?>"
+method="<?= $this->element->getMethod(); ?>">
+<p>
+E-mail:<br />
+<?= $this->element->email;     ?>
+</p>
+<p>
+Password: <br />
+<?= $this->element->pass;      ?>
+</p>
+<p>
+	Nom: <br/>
+<?=$this->element->nom;     ?>
+	</p>
+	<p>
+	Prenom: <br/>
+<?=$this->element->prenom;     ?>
+	</p>
+<p>
+	Civilité: <br/>
+<?=$this->element->civilite;     ?>
+	</p>
+	<p>
+	GSM: <br/>
+<?=$this->element->gsm;     ?>
+	</p>
+
+<p>
+<?=  $this->element->submit; ?></div>
+</p>
+
+</form>
